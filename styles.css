@@ -1,0 +1,381 @@
+  
+  body, html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  section {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    box-sizing: border-box;
+  }
+
+  .topnav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    left: 0;
+    width: 100%;  
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 20px;
+    height: 100px;
+    border-radius: 0;
+    background: #003b49;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 20px -5px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  #paper-1{
+    width: 100%;
+  }
+
+  #paper-2{
+    width: 100%;
+  }
+
+  #paper-3{
+    width: 100%;
+  }
+  
+  .einstein-photos {
+    max-width:800px;
+    display: flex;
+    justify-self: center;
+  }
+  
+.menu a {
+    padding: 12px 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-container {
+    display: flex;
+    padding-top: 82px;  
+    gap: 30px;  
+    flex-direction: row;
+}
+
+#quote {
+    background-color: rgba(0, 59, 73, 0.2);  
+    padding: 10px 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 20px -5px;
+    border: 2px solid #333; 
+    padding: 10px;     
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 20px -5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 20px -5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+
+
+  #quote:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  #quote:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+.about-container img {
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 20px -5px;
+  }
+
+  .about-text {
+    flex: 1;
+  }
+
+
+  #achievements-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .card {
+    border: 2px solid #333; 
+    padding: 10px;     
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 20px -5px;
+    background-color: rgba(241, 184, 143, 0.5);  
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+
+  #papers-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;  
+    gap: 20px;
+    text-align: center;
+  }
+
+  .paper-text {
+    font-size: 14px;
+  }
+  .paper-card {
+    border: 2px solid #333; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 20px -5px;
+    background-color: rgba(255, 255, 255, 0.5);  
+    min-height: 250px;
+    place-items: center; 
+    cursor: pointer;
+  }
+
+  .paper-image {
+    width: 40%;
+    padding-top: 55px;
+  }
+  
+
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .blog-card {
+    max-width: 700px;
+    text-align: left;
+  }
+  
+  .faq-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 15px;
+  }
+
+  .question {
+    padding: 15px;
+    border: 2px solid #333;
+    background-color: rgba(241, 184, 143, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 12px -5px;
+    border-radius: 8px;
+  }
+
+  .back-button {
+    padding: 10px 20px;
+    display: block; /* makes it behave like a full-width element */
+    margin-left: 0;
+    color: #fff;
+    text-align: left;
+    color: #003b49;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  #gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .image {
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  
+  .image p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  #hobby-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .hobby-card {
+    border: 2px solid #333; 
+    padding: 10px;     
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 20px -5px;
+    background-color: rgba(241, 184, 143, 0.5);  
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .hobby-card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px -5px;
+  }
+  
+  
+  #footer-nav {
+    background-color: #003b49;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -5px 15px -5px;
+  }
+  
+  .footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .footer-menu a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section {
+    flex: 1;
+  }
+  
+@media only screen and (max-width: 500px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-container img {
+    order: -1;
+    width: 75%;
+    display: block;
+    margin: 0 auto;  
+  }
+  
+
+  #achievements-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .image {
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  #hobby-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  #papers-container {
+    display: grid;
+    grid-template-columns: .5fr;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    }
+
+  .paper-text {
+    font-size: 10px;
+  }
+ 
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
